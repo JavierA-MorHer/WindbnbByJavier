@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+

@@ -1,0 +1,238 @@
+.logo {
+    height: 18.75px;
+  }
+
+  .search {
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .searchCountry,
+.searchCountry-full {
+  width: 120px;
+  height: 55px;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 16px 0 0px 16px;
+  border-style: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bdbdbd;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.searchGuest,
+.searchGuest-full {
+  width: 120px;
+  height: 55px;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-style: none;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bdbdbd;
+  padding-left: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.icon-search,
+.icon-search-full {
+  width: 70px;
+  height: 55px;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 0px 16px 16px 0px;
+  border-style: none;
+  color: #eb5757;
+  cursor: pointer;
+}
+
+.full-search {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-search-full {
+    width: 200px;
+    background-color: #eb5757;
+    color: #ffffff;
+  }
+  
+  .searchGuest-full,
+  .searchCountry-full {
+    width: 450px;
+    margin-bottom: 50px;
+  }
+  
+  .icon-close {
+    color: #eb5757;
+    background-color: #ffffff;
+    border-style: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .modal {
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+  }
+  
+ 
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .link {
+    text-decoration: none;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4f4f4f;
+    margin-bottom: 30px;
+  }
+  
+  .guest {
+    font-family: "Mulish";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .label {
+    margin-bottom: 30px;
+  }
+  
+  .contenido-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .item {
+    list-style-type: none;
+    cursor: pointer;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #4f4f4f;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+  
+  .counter{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .guest-content{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.btn{
+  border: 1px solid #828282;
+  border-radius: 4px;
+  width: 23px;
+  height: 23px;
+  margin-bottom: 10px;
+  }
+
+  .title{
+    font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  }
+
+  .ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close {
+    transition: opacity 400ms ease-in-out;
+  }
+
+  /* Media querys */
+  @media (min-width: 700px) {
+    .navBar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: "Muslin";
+    
+    }
+  }
+
+
+  @media (max-width: 992px) {
+    .search{
+        margin-top: 40px;
+        min-width: 90vw;
+    }
+
+    /* Styles of modal */
+    .modal {
+      height: fit-content;
+      width: 100%;
+      
+    }
+    .searchCountry-full,.searchGuest-full {
+        margin: 0;
+        margin-bottom: 16px;
+        border-radius: 16px;
+        text-align: center;
+        max-width: 90vw;
+        
+    }
+    
+    .contenido-search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .lista{
+        padding: 0;
+    }
+   
+    .item{
+        margin: 15px;
+    }
+
+  
+    .guest-content{
+        margin: 0;
+    }
+    /* End styles of modal */
+    
+  }

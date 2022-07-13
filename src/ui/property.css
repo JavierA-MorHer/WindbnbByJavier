@@ -1,0 +1,146 @@
+.properties {
+  padding-top: 80px;
+  
+}
+
+.titulo {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #333333;
+}
+
+.contenedor-titulo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 90vw;
+}
+
+.contenido{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-property {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: fit-content;
+}
+
+.property-photo {
+  width: 395px;
+  height: 269px;
+  border-radius: 24px 24px 24px 24px;
+}
+
+.card-contenido {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.icon-star {
+  color: #eb5757;
+  margin-right: 7px;
+}
+
+.rating-propiedad {
+  color: #4f4f4f;
+}
+
+.super-host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-superHost {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-right: 10px;
+  border: 1px solid #4f4f4f;
+  border-radius: 14px;
+  width: 100px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4f4f4f;
+}
+   
+
+/* Media querys */
+@media (max-width: 992px) {
+  
+.contenedor{
+  justify-content: center;
+}
+  .contenedor-titulo{
+    display: flex;
+    min-width: auto;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 20px;
+  }
+
+  .properties{
+    text-align: center;
+  }
+  .contenido{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-property{
+    padding: 0;
+    margin-bottom: 40px;
+    
+    
+    align-items: center;
+  }
+  .card-contenido{
+  
+   width: max-content;
+   
+  }
+}
+
+@media (min-width:1000px ) and (max-width:1300px ){
+  .contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contenedor-titulo{
+    margin-bottom: 20px;
+  }
+}
+
+
